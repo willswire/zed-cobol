@@ -1,0 +1,5 @@
+name = "COBOL"
+grammar = "cobol"
+path_suffixes = ["cbl", "cob"]
+line_comments = ["      *"]
+tab_size = 7

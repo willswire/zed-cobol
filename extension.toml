@@ -1,0 +1,11 @@
+id = "cobol"
+name = "COBOL"
+description = "COBOL support."
+version = "0.0.1"
+schema_version = 1
+authors = ["willswire"]
+repository = "https://github.com/willswire/zed-cobol"
+
+[grammars.cobol]
+repository = "https://github.com/willswire/tree-sitter-cobol"
+commit = "934ac8b118f59bdc6827b0a322ebd94117f0509b"
