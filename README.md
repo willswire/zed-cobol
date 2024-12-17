@@ -1,2 +1,3 @@
 # zed-cobol
-an extension for adding COBOL language support to Zed
+
+COBOL syntax highlighting & language server for [Zed](https://github.com/zed-industries/zed)
