@@ -1,2 +1,4 @@
 grammars
 *.DS_Store
+target
+*.wasm
