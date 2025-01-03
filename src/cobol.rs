@@ -95,6 +95,10 @@ impl CobolExtension {
         }
 
         if Self::binary_exists(&binary_path) {
+            // Make the downloaded file executable
+            zed::make_file_executable(&binary_path)
+                .map_err(|e| format!("Failed to make file executable: {:?}", e))?;
+
             self.cached_binary_path = Some(binary_path.clone());
             Ok(binary_path)
         } else {
