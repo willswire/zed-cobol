@@ -8,17 +8,16 @@
 
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       01 GREETING       PIC X(20) VALUE 'HELLO, WORLD!'.
-       01 COUNTER        PIC 9(2) VALUE 10.
+       01  GREETING          PIC X(20) VALUE 'HELLO, WORLD!'.
+       01  COUNTER           PIC 9(2) VALUE 10.
 
        PROCEDURE DIVISION.
-       BEGIN.
-           DISPLAY GREETING.
-           PERFORM COUNT-DOWN.
-
        COUNT-DOWN.
            PERFORM VARYING COUNTER FROM 10 BY -1 UNTIL COUNTER = 0
                DISPLAY "Counter: " COUNTER
            END-PERFORM.
 
+       BEGIN.
+           DISPLAY GREETING.
+           PERFORM COUNT-DOWN.
            STOP RUN.
