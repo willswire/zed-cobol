@@ -47,7 +47,7 @@ impl CobolExtension {
         );
 
         let release =
-            zed::github_release_by_tag_name("eclipse-che4z/che-che4z-lsp-for-cobol", "2.3.0")?;
+            zed::github_release_by_tag_name("eclipse-che4z/che-che4z-lsp-for-cobol", "2.4.3")?;
 
         let (platform, arch) = zed::current_platform();
         let asset_basename = format!(
