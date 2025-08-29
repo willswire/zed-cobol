@@ -1,31 +1,47 @@
 ; highlights.scm
 
 ; Keywords
-"IDENTIFICATION DIVISION." @keyword
-"ENVIRONMENT DIVISION." @keyword
-"DATA DIVISION." @keyword
-"PROCEDURE DIVISION." @keyword
-"WORKING-STORAGE SECTION." @keyword
-"FILE SECTION." @keyword
-"CONFIGURATION SECTION." @keyword
-"PIC" @keyword
-"MOVE" @keyword
+"IDENTIFICATION" @keyword
+"ENVIRONMENT" @keyword
+"DATA" @keyword
+"PROCEDURE" @keyword
+"DIVISION" @keyword
+"PROGRAM-ID" @keyword
+"AUTHOR" @keyword
+"INSTALLATION" @keyword
+"DATE-WRITTEN" @keyword
+"CONFIGURATION" @keyword
+"INPUT-OUTPUT" @keyword
+"SECTION" @keyword
+"SOURCE-COMPUTER" @keyword
+"FILE-CONTROL" @keyword
+"FILE" @keyword
+"WORKING-STORAGE" @keyword
+"SELECT" @keyword
+"ASSIGN" @keyword
 "TO" @keyword
+"PIC" @keyword
+"VALUE" @keyword
+"USING" @keyword
+"MOVE" @keyword
 "DISPLAY" @keyword
-"PERFORM" @keyword
-"IF" @keyword
-"EQUAL" @keyword
 "STOP" @keyword
 "RUN" @keyword
-"BEGIN" @keyword
-"VARYING" @keyword
-"UNTIL" @keyword
+"IF" @keyword
+"THEN" @keyword
+"ELSE" @keyword
+"END-IF" @keyword
+"PERFORM" @keyword
+"COPY" @keyword
 
-; Paragraph Labels
-(paragraph_label) @label
-
-; Indices
-(index_line (number_literal) @number)
+; Operators
+"=" @operator
+"EQUAL" @operator
+"<" @operator
+">" @operator
+"<=" @operator
+">=" @operator
+"<>" @operator
 
 ; Identifiers
 (identifier) @variable
@@ -44,6 +60,9 @@
 (environment_division) @section
 (data_division) @section
 (procedure_division) @section
+(configuration_section) @section
+(input_output_section) @section
+(file_control_paragraph) @section
 (working_storage_section) @section
 (file_section) @section
 
@@ -53,7 +72,6 @@
 (perform_statement) @statement
 (if_statement) @statement
 (stop_statement) @statement
-(begin_statement) @statement
+(copy_statement) @statement
+(select_statement) @statement
 
-; Paragraphs
-(paragraph (paragraph_label) @function)
