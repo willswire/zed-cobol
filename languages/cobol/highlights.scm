@@ -1,51 +1,21 @@
 ; highlights.scm
 
 ; Keywords
-[
-  "IDENTIFICATION"
-  "ENVIRONMENT"
-  "DATA"
-  "PROCEDURE"
-  "DIVISION"
-  "PROGRAM-ID"
-  "AUTHOR"
-  "INSTALLATION"
-  "DATE-WRITTEN"
-  "CONFIGURATION"
-  "INPUT-OUTPUT"
-  "SECTION"
-  "SOURCE-COMPUTER"
-  "FILE-CONTROL"
-  "FILE"
-  "WORKING-STORAGE"
-  "SELECT"
-  "ASSIGN"
-  "TO"
-  "PIC"
-  "VALUE"
-  "USING"
-  "MOVE"
-  "DISPLAY"
-  "STOP"
-  "RUN"
-  "IF"
-  "THEN"
-  "ELSE"
-  "END-IF"
-  "PERFORM"
-  "COPY"
-] @keyword
+((identifier) @keyword
+  (#match? @keyword "(?i)^(IDENTIFICATION|ENVIRONMENT|DATA|PROCEDURE|DIVISION|PROGRAM-ID|AUTHOR|INSTALLATION|DATE-WRITTEN|CONFIGURATION|INPUT-OUTPUT|SECTION|SOURCE-COMPUTER|FILE-CONTROL|FILE|WORKING-STORAGE|SELECT|ASSIGN|TO|PIC|VALUE|USING|MOVE|DISPLAY|STOP|RUN|IF|THEN|ELSE|END-IF|PERFORM|COPY)$"))
 
 ; Operators
 [
   "="
-  "EQUAL"
   "<"
   ">"
   "<="
   ">="
   "<>"
 ] @operator
+
+((identifier) @operator
+  (#match? @operator "(?i)^EQUAL$"))
 
 ; Identifiers
 (identifier) @variable
